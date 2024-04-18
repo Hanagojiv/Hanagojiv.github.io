@@ -1,96 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivek Basavanth Hanagoji - Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
 
-<header>
-    <div class="header-content">
-        <h1>Hello, I'm Vivek Basavanth Hanagoji!</h1>
-        <p>Graduate Student | Data Analyst | Salesforce Specialist</p>
+    <title>Album example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">When I am inspired, I draw. When inspired by what I drew, I share. Thanks for looking!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand">Album</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Lucas Amunategui</h1>
+          <p class="lead text-muted">Art Portfolio</p>
+        </div>
+      </section>
+
+      <div class="album text-muted">
+        <div class="container">
+
+          <div class="row">
+            <div class="card">
+              <img src="images/lucas-amunategui-drowning.JPG" alt="image 2017" style="width:100%"  
+                   data-toggle="modal" data-target="#myModal">
+              <p class="card-text">Drowning 2017</p>
+            </div>
+            <div class="card">
+              <img src="images/lucas-amunategui-charcoal.JPG" alt="image 2017" style="width:100%"  
+               data-toggle="modal" data-target="#myModal">
+              <p class="card-text">Charcoal 2017</p>
+            </div>
+            <div class="card">
+              <img src="images/lucas-amunategui-building.JPG" alt="image 2017" style="width:100%"
+                   data-toggle="modal" data-target="#myModal">
+              <p class="card-text">Building 2017</p>            
+            </div>
+             <div class="card">
+              <img src="images/lucas-amunategui-nose.jpg" alt="image 2017" style="width:100%"  
+                   data-toggle="modal" data-target="#myModal">
+              <p class="card-text">Face 1 2017</p>
+            </div>
+            <div class="card">
+              <img src="images/lucas-amunategui-face-2.JPG" alt="image 2017" style="width:100%"  
+               data-toggle="modal" data-target="#myModal">
+              <p class="card-text">Face 2 2017</p>
+            </div>
+            <div class="card">
+              <img src="images/lucas-amunategui-face-3.JPG" alt="image 2017" style="width:100%"
+                   data-toggle="modal" data-target="#myModal">
+              <p class="card-text">Face 3 2017</p>            
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+
+      
+      <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-responsive" src="" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
-</header>
+</div>
+      
+ 
+      
+       
+ </main>
 
-<main>
-    <section id="about-me">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I'm a graduate student at Northeastern University, pursuing my Master's degree in Information Systems with a specialization in Data Analytics and Engineering. I'm passionate about leveraging data to drive insights and create meaningful solutions.</p>
-            <!-- Add more personal statement content here -->
-        </div>
-    </section>
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
 
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <ul>
-                <li>Northeastern University - Master of Science in Information Systems, Sep 2022 – May 2024, Boston, MA</li>
-                <li>Savitribai Phule Pune University - Bachelor of Engineering in Electronics and Tele-Communication, Jul 2015 – Jun 2019, Pune, India</li>
-            </ul>
-        </div>
-    </section>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-    <section id="professional-experience">
-        <div class="section-content">
-            <h2>Professional Work Experience</h2>
-            <div class="job">
-                <h3>Data Analyst - Vodafone Intelligent Solutions</h3>
-                <p>Jul 2020 – Jun 2022, Pune, India</p>
-                <ul>
-                    <!-- List your roles and responsibilities here -->
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Salesforce Administrator - Vodafone Intelligent Solutions</h3>
-                <p>Jul 2019 – Jun 2020, Pune, India</p>
-                <ul>
-                    <!-- List your roles and responsibilities here -->
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="academic-projects">
-        <div class="section-content">
-            <h2>Academic Projects</h2>
-            <div class="project">
-                <h3>GenAI Chatbot</h3>
-                <p>Nov 2023 – Dec 2023</p>
-                <!-- Project details -->
-            </div>
-            <div class="project">
-                <h3>New York City Motor Vehicle (MV) Collision</h3>
-                <p>Aug 2023 – Sept 2023</p>
-                <!-- Project details -->
-            </div>
-        </div>
-    </section>
-
-    <section id="technical-skills">
-        <div class="section-content">
-            <h2>Technical Skills</h2>
-            <ul>
-                <!-- List of technical skills -->
-            </ul>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <section id="contact">
-        <div class="section-content">
-            <h2>Contact</h2>
-            <p>Email: hanagojivivek@gmail.com</p>
-            <p>Phone: (+1)617-368-0288</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/vivekhanagoji/">linkedin.com/in/vivekhanagoji/</a></p>
-            <p>GitHub: <a href="https://github.com/Hanagojiv">github.com/Hanagojiv</a></p>
-        </div>
-    </section>
-</footer>
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+    <script>
+    $(document).ready(function () {
+            $('#myModal').on('show.bs.modal', function (e) {
+                var image = $(e.relatedTarget).attr('src');
+                $(".img-responsive").attr("src", image);
+            });
+    });
+    </script> 
+  </body>
 </html>
