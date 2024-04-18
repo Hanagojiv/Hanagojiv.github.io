@@ -1,0 +1,55 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.header-content {
+    text-align: center;
+    padding: 50px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.section-content {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-content h2 {
+    color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job, .project {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Links Styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
