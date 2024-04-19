@@ -1,0 +1,19 @@
+/* Base styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+  /* Styles for the header */
+}
+
+/* Section styles */
+section {
+  /* Styles for each section */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjustments for mobile views */
+}
