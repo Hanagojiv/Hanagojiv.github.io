@@ -3,51 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivek Basavanth Hanagoji's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Vivek Basavanth Hanagoji's Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm Vivek Basavanth Hanagoji</h1>
-        <p>Experienced Data Analyst and IT Professional</p>
-        <!-- Add navigation if needed -->
+    <!-- Header Section -->
+    <header data-aos="fade-down" data-aos-duration="1000">
+        <div class="header-content">
+            <h1>Vivek Basavanth Hanagoji</h1>
+            <p>Data Analyst & IT Professional</p>
+            <div>
+                <!-- Replace with your actual LinkedIn and GitHub URL -->
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+            </div>
+        </div>
     </header>
-    
-    <section id="about">
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-right" data-aos-duration="1000">
         <h2>About Me</h2>
-        <img src="assets/images/profile.jpg" alt="Vivek Hanagoji">
-        <p><!-- Your summary here --></p>
+        <p>Experienced Data Analyst with a solid 3 years background in IT. Eager to apply analytical skills and technical knowledge in a Data Analytics and Engineering role starting May 2024.</p>
     </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <div><!-- Skill categories and levels here --></div>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-left" data-aos-duration="1000">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Python, R, SQL, PySpark</li>
+            <li>Apache Airflow, Talend, dbt</li>
+            <li>Pandas, Sci-kit learn, NumPy</li>
+            <li>MySQL, SQL Server, PostgreSQL</li>
+            <li>BigQuery, Amazon S3, Snowflake</li>
+            <li>PowerBI, Tableau, Looker</li>
+        </ul>
     </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Project details here -->
+
+    <!-- Experience Section -->
+    <section id="experience" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <h3>Data Analyst at Vodafone Intelligent Solutions</h3>
+            <p>Jul 2020 – Jun 2022</p>
+            <ul>
+                <li>Engineered and deployed custom ETL solutions...</li>
+                <!-- Add more points here -->
+            </ul>
+        </div>
+        <!-- Add other positions in a similar fashion -->
     </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <!-- Work experience details here -->
+
+    <!-- Projects Section -->
+    <section id="projects" data-aos="zoom-in" data-aos-duration="1000">
+        <h2>Technical Projects</h2>
+        <div class="project">
+            <h3>GenAI Chatbot</h3>
+            <p>Nov 2023 – Dec 2023</p>
+            <!-- Add project description -->
+        </div>
+        <!-- Add other projects in a similar fashion -->
     </section>
-    
-    <section id="education">
+
+    <!-- Education Section -->
+    <section id="education" data-aos="zoom-out" data-aos-duration="1000">
         <h2>Education</h2>
-        <!-- Educational qualifications here -->
+        <div class="education">
+            <h3>Master of Science in Information Systems</h3>
+            <p>Northeastern University, Expected May 2024</p>
+        </div>
+        <!-- Add other educational qualifications in a similar fashion -->
     </section>
-    
-    <section id="contact">
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up" data-aos-duration="1000">
         <h2>Contact</h2>
-        <form><!-- Contact form here --></form>
+        <form action="https://formspree.io/f/yourFormId" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
-    
-    <footer>
+
+    <footer data-aos="fade-down" data-aos-duration="1000">
         <p>&copy; 2024 by Vivek Basavanth Hanagoji. All rights reserved.</p>
     </footer>
-    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200,
+          once: true,
+        });
+    </script>
 </body>
 </html>

@@ -1,30 +1,160 @@
-/* Add your color scheme, font choices, and other styles. This is just a starting point. */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+/* Basic Resets and Typography */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Styles */
 header {
-  background: #333;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
   color: #fff;
-  padding: 1rem 0;
+  padding: 2rem 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-header h1 {
+.header-content h1 {
   margin: 0;
+  font-size: 2.5rem;
+  animation: fadeInDown 2s ease forwards, glow 2s infinite alternate;
 }
 
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  100% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+/* Header Background Animation */
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: #fff; /* Fallback */
+  background: linear-gradient(115deg, transparent, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 60%, transparent 60%, transparent);
+  z-index: 1;
+  animation: moveSlant 8s linear infinite;
+}
+
+@keyframes moveSlant {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* Section styles with advanced animations */
 section {
-  padding: 1rem 0;
+  padding: 4rem 5%;
+  position: relative;
+  z-index: 2;
+  background: #fff;
   margin: 1rem 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transform: scale(0.98);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
-/* You will expand upon this with responsive designs and specific styling. */
-
-/* Add media queries for responsiveness */
-@media (max-width: 768px) {
-  /* Adjustments for mobile views */
+section:hover {
+  transform: scale(1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
+
+/* Individual Section Animations */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Skills Section Styles */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+#skills li {
+  flex: 0 0 calc(33.333% - 2rem);
+  margin: 1rem;
+  background: linear-gradient(to right, #6e8efb, #a777e3);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#skills li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 1rem 0;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  #skills ul {
+    flex-direction: column;
+  }
+
+  #skills li {
+    flex: 0 0 100%;
+  }
+}
+
+/* Other sections will follow similar patterns with different animations */
