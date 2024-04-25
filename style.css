@@ -1,19 +1,30 @@
-/* Base styles */
+/* Add your color scheme, font choices, and other styles. This is just a starting point. */
 body {
   font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header styles */
 header {
-  /* Styles for the header */
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
 }
 
-/* Section styles */
+header h1 {
+  margin: 0;
+}
+
 section {
-  /* Styles for each section */
+  padding: 1rem 0;
+  margin: 1rem 0;
 }
 
-/* Media queries for responsiveness */
+/* You will expand upon this with responsive designs and specific styling. */
+
+/* Add media queries for responsiveness */
 @media (max-width: 768px) {
   /* Adjustments for mobile views */
 }
