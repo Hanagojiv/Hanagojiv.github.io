@@ -1,119 +1,61 @@
-/* @import "{{ site.theme }}"; */
-
-/* Remove the theme import if it's causing style conflicts */
-/* @import "{{ site.theme }}"; */
-
-:root {
-    --primary-color: #2a3f54; /* A dark, desaturated blue */
-    --secondary-color: #4b86b4; /* A lighter, complementary blue */
-    --background-color: #eaecee; /* A very light grey that's easy on the eyes */
-    --text-color: #2a3f54; /* Same as the primary color for consistency */
-    --heading-font: 'Lato', sans-serif;
-    --body-font: 'Open Sans', sans-serif;
-    --border-radius: 5px;
-}
-
 body {
-    background: var(--background-color);
-    color: var(--text-color);
     font-family: var(--body-font);
-    line-height: 1.6; /* Improved readability */
+    font-size: 16px; /* Base font size */
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--background-color);
     margin: 0;
     padding: 0;
 }
 
-/* Basic reset for spacing */
-ul, ol, p {
-    margin: 0;
-    padding: 0;
-    list-style-position: inside;
+h1, .h1 {
+    font-size: 2rem; /* Heading size */
+    font-weight: 700; /* Bold */
+    margin-bottom: 1rem; /* Space below heading */
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    margin-bottom: 0.5em; /* Consistent spacing below headings */
+h2, .h2 {
+    font-size: 1.75rem;
+    font-weight: 600; /* Slightly less bold than h1 */
+    margin-bottom: 0.75rem;
 }
 
-h1 {
-    font-size: 2.5em; /* Large and impactful */
-    color: var(--primary-color); /* Brand color for main headings */
+p {
+    font-size: 1rem; /* Paragraph size matches base size */
+    margin-bottom: 1rem; /* Space below paragraphs */
 }
 
-h2 { font-size: 2em; }
-h3 { font-size: 1.75em; }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.25em; }
-h6 { font-size: 1em; }
-
-/* Links and Buttons */
 a, .button {
-    background: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: var(--border-radius);
-    transition: background-color 0.3s ease;
-    display: inline-block; /* Align better inline and allow for width/height properties */
-    text-align: center;
-}
-
-a:hover, .button:hover {
-    background: var(--secondary-color);
+    font-size: 1rem; /* Ensure buttons and links are readable */
+    font-weight: 500; /* Medium weight for clickable items */
+    /* ... other styles ... */
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: var(--primary-color);
-    overflow: hidden; /* Clear floats */
-    position: fixed; /* Sticky nav bar */
-    top: 0;
-    width: 100%;
+    /* ... other styles ... */
+    font-size: 1rem;
 }
 
-.navbar a {
-    float: left; /* Align links side by side */
-    display: block; /* Block-level link buttons */
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background-color: var(--secondary-color);
-    color: white;
-}
-
-/* Responsive Grid for Projects and Experience Sections */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 1rem; /* Spacing between grid items */
-    padding: 1rem;
-}
-
-.grid-item {
-    background: white; /* Contrast against the body background */
-    border-radius: var(--border-radius);
-    padding: 1rem; /* Spacing inside grid items */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Stack on smaller screens */
-    }
+/* Ensure consistency in list items */
+ul, ol {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
 footer {
-    background-color: var(--text-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative; /* Pushed to the bottom */
-    bottom: 0;
-    width: 100%;
+    font-size: 0.875rem; /* Slightly smaller text for footer */
+    /* ... other styles ... */
+}
+
+/* Add responsive typography for smaller devices */
+@media (max-width: 768px) {
+    h1, .h1 {
+        font-size: 1.75rem; /* Smaller heading for mobile */
+    }
+    h2, .h2 {
+        font-size: 1.5rem;
+    }
+    /* Adjust other elements as necessary */
 }
