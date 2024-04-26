@@ -1,4 +1,4 @@
-@import "{{ site.theme }}";
+/* @import "{{ site.theme }}"; */
 
 /* Remove the theme import if it's causing style conflicts */
 /* @import "{{ site.theme }}"; */
