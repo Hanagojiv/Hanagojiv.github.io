@@ -1,61 +1,118 @@
-body {
-    font-family: var(--body-font);
-    font-size: 16px; /* Base font size */
-    line-height: 1.6;
-    color: var(--text-color);
-    background: var(--background-color);
+/* Define your color scheme and fonts */
+:root {
+    --primary-color: #2c3e50; /* A strong primary color for headings and navbar */
+    --secondary-color: #3498db; /* A secondary color for links and buttons */
+    --background-color: #ecf0f1; /* A light background to keep the content readable */
+    --text-color: #2c3e50; /* A color that contrasts well against the background for regular text */
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --border-radius: 4px;
+}
+
+/* Import the Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+/* Reset some basic elements for consistency */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
     margin: 0;
     padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
 }
 
-h1, .h1 {
-    font-size: 2rem; /* Heading size */
-    font-weight: 700; /* Bold */
-    margin-bottom: 1rem; /* Space below heading */
+/* Apply the root variables */
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.65;
+    padding: 20px;
 }
 
-h2, .h2 {
-    font-size: 1.75rem;
-    font-weight: 600; /* Slightly less bold than h1 */
-    margin-bottom: 0.75rem;
+/* Style the main heading */
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+    font-size: 2.5rem;
+    line-height: 1.2;
 }
 
-p {
-    font-size: 1rem; /* Paragraph size matches base size */
-    margin-bottom: 1rem; /* Space below paragraphs */
+/* Style the section headings */
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin: 20px 0;
+    font-size: 2rem;
+    line-height: 1.25;
 }
 
-a, .button {
-    font-size: 1rem; /* Ensure buttons and links are readable */
-    font-weight: 500; /* Medium weight for clickable items */
-    /* ... other styles ... */
+/* Style the body text */
+p, li {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
-/* Navigation Bar */
+/* Style the links */
+a {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Navbar styling */
 .navbar {
-    /* ... other styles ... */
-    font-size: 1rem;
+    background: var(--primary-color);
+    padding: 10px 20px;
 }
 
-/* Ensure consistency in list items */
-ul, ol {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    font-weight: 600;
 }
 
-/* Footer */
+.navbar a:hover {
+    color: var(--background-color);
+}
+
+/* Footer styling */
 footer {
-    font-size: 0.875rem; /* Slightly smaller text for footer */
-    /* ... other styles ... */
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Add responsive typography for smaller devices */
+/* Add some spacing to the sections for better readability */
+section {
+    margin: 40px 0;
+}
+
+/* Style your buttons or call-to-action links */
+.button {
+    background: var(--secondary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background: darken(var(--secondary-color), 10%);
+}
+
+/* Responsive design adjustments */
 @media (max-width: 768px) {
-    h1, .h1 {
-        font-size: 1.75rem; /* Smaller heading for mobile */
+    h1 {
+        font-size: 2rem;
     }
-    h2, .h2 {
+    h2 {
         font-size: 1.5rem;
     }
-    /* Adjust other elements as necessary */
 }
