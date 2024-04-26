@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  {% include head-custom.html %}
+</head>
+<body>
+  <nav class="navbar">
+    <div class="wrapper">
+      <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      <div class="nav-links">
+        <!-- Navigation Links -->
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <section id="about">
+      <!-- Your 'About Me' content goes here -->
+    </section>
+
+    <section id="experience">
+      <!-- Your 'Experience' content goes here -->
+    </section>
+
+    <section id="projects">
+      <!-- Your 'Projects' content goes here -->
+    </section>
+
+    <section id="contact">
+      <!-- Your 'Contact' content/form goes here -->
+    </section>
+    
+    <!-- The main content of each page -->
+    {{ content }}
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <p>{{ site.description | default: 'Data Science Portfolio of Vivek Basavanth Hanagoji' }}</p>
+      <div class="social-links">
+        <!-- Add your social links here -->
+        <a href="{{ site.github.owner_url }}" aria-label="GitHub">GitHub</a>
+        <!-- Other social links -->
+      </div>
+      <p><small>Hosted on GitHub Pages — Theme modified from Cayman theme</small></p>
+    </div>
+  </footer>
+  
+  <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+</body>
+</html>
