@@ -60,11 +60,14 @@ _Oct 2023 – Nov 2023_
 - **Causal Inference Application:** Demonstrated the use of causal inference in machine learning to enhance model interpretability and feature selection, significantly improving model generalization capabilities across varied datasets.
 - [For more Details](./Causal.html)
 
-### New York City Motor Vehicle (MV) Collision | ER/Studio, Talend, SQL Server, Power BI
+### Time Series Forecasting for Product Sales
 _Aug 2023 – Sept 2023_
-- Migrated 10 million data records from BigQuery to MySQL Server using Talend, optimizing data migration procedures.
-- Engineered ETL workflows in Talend for NYC Motor Collision Dataset, orchestrating data merging and cleansing processes.
-- Leveraged Tableau and PowerBI to analyse trends, patterns, and insights, facilitating year-over-year (YOY) performance tracking for 30+ key performance indicators (KPIs).
+- Data Analysis and Preparation: Analyzed five years of sales data (2013-2017) for 50 products across 10 stores. Preprocessed data by creating time-related features and splitting into training and test datasets.
+- Model Implementation and Techniques: Employed multiple time series forecasting models, including Seasonal Naive, Holt-Winters, ARIMA, and Linear Regression, using Python libraries like statsmodels and sklearn.
+- Results and Evaluation: Achieved best forecast accuracy with Holt-Winters model, showing significant improvement over the baseline Seasonal Naive model. Evaluated forecasts using MAE, RMSE, and MAPE metrics.
+- [For more Details](./TimeSeries.html)
+
+### 
 
 ## Technical Skills 💻
 
