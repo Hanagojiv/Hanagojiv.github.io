@@ -46,18 +46,19 @@ Pune, India
 
 ## Data Science Projects 🔧
 
-### Generating Fake Images using GAN | Python, GAN model
+### Generating Fake Images using GAN
 _Nov 2023 – Dec 2023_
 - Model Design and Tools: Utilized TensorFlow and Keras to construct and train a Generative Adversarial Network (GAN) with a detailed generator and discriminator architecture, aiming to generate realistic human face images.
 - Dataset and Preprocessing: Employed a face-mask-lite dataset containing 9,090 images, preprocessed using OpenCV for color correction and resizing, followed by transformation into tensor slices for efficient batch processing during training.
 - Training and Results: Over multiple training epochs, refined the generator's ability to produce convincing face images, achieving increasingly realistic results as evidenced by discriminator feedback, which assessed the artificial images' similarity to genuine data distributions.
 - [For more Details](./GAN.html)
 
-### Text to SQL with Snowpark | Snowflake, Python, Snowpark, OpenAI, LangChain, Streamlit
+### Causality in Machine Learning
 _Oct 2023 – Nov 2023_
-- Streamlined Snowflake data views by 15% with Python UDFs and EDA, boosting efficiency through Snowpark.
-- Built a Streamlit application with LangChain for text-to-SQL in Snowflake, improving query efficiency by 20%.
-- Designed Streamlit application with Pyplot for Snowflake data analysis, boosting visualization and analytical insights by 25%.
+- **Data Simulation and Visualization:** Simulated causal relationships between variables A and B, visualizing data with scatter plots and correlation analysis to explore initial indications of causality.
+- **Statistical Techniques:** Applied linear regression to establish causality, using correlation metrics and regression coefficients to predict changes in B as a result of changes in A.
+- **Causal Inference Application:** Demonstrated the use of causal inference in machine learning to enhance model interpretability and feature selection, significantly improving model generalization capabilities across varied datasets.
+- [For more Details](./Causal.html)
 
 ### New York City Motor Vehicle (MV) Collision | ER/Studio, Talend, SQL Server, Power BI
 _Aug 2023 – Sept 2023_
