@@ -67,7 +67,11 @@ _Aug 2023 – Sept 2023_
 - Results and Evaluation: Achieved best forecast accuracy with Holt-Winters model, showing significant improvement over the baseline Seasonal Naive model. Evaluated forecasts using MAE, RMSE, and MAPE metrics.
 - [For more Details](./TimeSeries.html)
 
-### 
+### Feature Engineering in Data Science
+- Data Analysis and Cleaning: Analyzed World Happiness Report data to predict happiness scores using statistical methods and Python libraries like Pandas and Seaborn. No missing or inconsistent values were found.
+- Feature Selection and Evaluation: Applied multiple feature selection techniques including p-value analysis, correlation matrices, and machine learning models like Random Forest to identify significant predictors of happiness.
+- Model Optimization and Validation: Optimized the predictive model by removing insignificant variables, leading to better model performance and accuracy in predicting country happiness scores.
+- [For more Details](./FeatureEngineering.html)
 
 ## Technical Skills 💻
 
