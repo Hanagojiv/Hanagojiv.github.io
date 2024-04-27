@@ -44,13 +44,14 @@ Pune, India
 - Utilized tools like Process Builder, Email Templates, Workflow Rules, Workflow Actions, and Approval Flows to improve system functionality, ensuring overall Salesforce efficiency.
 - Automated complex data patching processes using Apex Data Loader, processing over 10,000 records monthly, resulting in a 50% reduction in manual data entry errors and a 30% increase in process efficiency.
 
-## Technical Projects 🔧
+## Data Science Projects 🔧
 
-### GenAI Chatbot | Python, FastAPI, AWS, Docker, Airflow, OpenAI, Pinecone DB
+### Generating Fake Images using GAN | Python, GAN model
 _Nov 2023 – Dec 2023_
-- Crafted an OpenAI-driven chatbot for SEC documents, enabling precise query resolution for over 75 forms with 95% accuracy in similarity searches.
-- Engineered 2 Airflow ETL pipelines for SEC document processing, boosting efficiency by 40% and enhancing data storage.
-- Containerized application deployment using Docker on a GCP VM Instance.
+- Model Design and Tools: Utilized TensorFlow and Keras to construct and train a Generative Adversarial Network (GAN) with a detailed generator and discriminator architecture, aiming to generate realistic human face images.
+- Dataset and Preprocessing: Employed a face-mask-lite dataset containing 9,090 images, preprocessed using OpenCV for color correction and resizing, followed by transformation into tensor slices for efficient batch processing during training.
+- Training and Results: Over multiple training epochs, refined the generator's ability to produce convincing face images, achieving increasingly realistic results as evidenced by discriminator feedback, which assessed the artificial images' similarity to genuine data distributions.
+- [For more Details](./GAN.html)
 
 ### Text to SQL with Snowpark | Snowflake, Python, Snowpark, OpenAI, LangChain, Streamlit
 _Oct 2023 – Nov 2023_
