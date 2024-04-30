@@ -61,32 +61,28 @@ Pune, India
 
 ## Data Science Projects 🔧
 
-### Generating Fake Images using GAN | [Github](https://github.com/Hanagojiv/Generating-Fake-Face-Imgaes-using-GAN-Generative-AI/tree/main)
+### [Generating Fake Images using GAN](./GAN.html) | [Github](https://github.com/Hanagojiv/Generating-Fake-Face-Imgaes-using-GAN-Generative-AI/tree/main)
 _Nov 2023 – Dec 2023_
 - Model Design and Tools: Utilized TensorFlow and Keras to construct and train a Generative Adversarial Network (GAN) with a detailed generator and discriminator architecture, aiming to generate realistic human face images.
 - Dataset and Preprocessing: Employed a face-mask-lite dataset containing 9,090 images, preprocessed using OpenCV for color correction and resizing, followed by transformation into tensor slices for efficient batch processing during training.
 - Training and Results: Over multiple training epochs, refined the generator's ability to produce convincing face images, achieving increasingly realistic results as evidenced by discriminator feedback, which assessed the artificial images' similarity to genuine data distributions.
-- [For more Details](./GAN.html)
 
-### Causality in Machine Learning | [Github](https://github.com/Hanagojiv/Causal-Inference)
+### [Causality in Machine Learning](./Causal.html) | [Github](https://github.com/Hanagojiv/Causal-Inference)
 _Oct 2023 – Nov 2023_
 - **Data Simulation and Visualization:** Simulated causal relationships between variables A and B, visualizing data with scatter plots and correlation analysis to explore initial indications of causality.
 - **Statistical Techniques:** Applied linear regression to establish causality, using correlation metrics and regression coefficients to predict changes in B as a result of changes in A.
 - **Causal Inference Application:** Demonstrated the use of causal inference in machine learning to enhance model interpretability and feature selection, significantly improving model generalization capabilities across varied datasets.
-- [For more Details](./Causal.html)
 
-### Time Series Forecasting for Product Sales | [Github](https://github.com/Hanagojiv/TimeSeriesForcasting)
+### [Time Series Forecasting for Product Sales](./TimeSeries.html) | [Github](https://github.com/Hanagojiv/TimeSeriesForcasting)
 _Aug 2023 – Sept 2023_
 - Data Analysis and Preparation: Analyzed five years of sales data (2013-2017) for 50 products across 10 stores. Preprocessed data by creating time-related features and splitting into training and test datasets.
 - Model Implementation and Techniques: Employed multiple time series forecasting models, including Seasonal Naive, Holt-Winters, ARIMA, and Linear Regression, using Python libraries like statsmodels and sklearn.
 - Results and Evaluation: Achieved best forecast accuracy with Holt-Winters model, showing significant improvement over the baseline Seasonal Naive model. Evaluated forecasts using MAE, RMSE, and MAPE metrics.
-- [For more Details](./TimeSeries.html)
 
-### Feature Engineering in Data Science | [Github](https://github.com/Hanagojiv/Data-Cleaning-and-Feature-Selection)
+### [Feature Engineering in Data Science](./FeatureEngineering.html) | [Github](https://github.com/Hanagojiv/Data-Cleaning-and-Feature-Selection)
 - Data Analysis and Cleaning: Analyzed World Happiness Report data to predict happiness scores using statistical methods and Python libraries like Pandas and Seaborn. No missing or inconsistent values were found.
 - Feature Selection and Evaluation: Applied multiple feature selection techniques including p-value analysis, correlation matrices, and machine learning models like Random Forest to identify significant predictors of happiness.
 - Model Optimization and Validation: Optimized the predictive model by removing insignificant variables, leading to better model performance and accuracy in predicting country happiness scores.
-- [For more Details](./FeatureEngineering.html)
 
 ## Technical Skills 💻
 
