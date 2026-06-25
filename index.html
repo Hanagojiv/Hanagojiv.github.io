@@ -64,72 +64,59 @@
     <div id="scroll-progress"></div>
 
     <!-- ===================== NAVBAR ===================== -->
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Vivek Basavanth Hanagoji</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+    <!-- ===================== HERO ===================== -->
+    <section id="home-section">
+      <!-- Particle canvas fills the full section -->
+      <div id="particles-js"></div>
 
-						<script>
+      <div class="container hero-container">
+        <div class="row align-items-center">
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+          <!-- Text — left column -->
+          <div class="col-lg-7 col-md-12 hero-text-col" data-aos="fade-right" data-aos-duration="900">
+            <span class="glass-chip">
+              <i class="fas fa-circle" style="font-size:0.4rem;color:var(--gold);vertical-align:middle;"></i>
+              &nbsp;Available for Opportunities
+            </span>
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Vivek Basavanth<br><span>Hanagoji</span></h1>
+            <div class="hero-subtitle">
+              I build <span id="typing-animation"></span>
+            </div>
+            <div class="hero-cta">
+              <a href="https://github.com/Hanagojiv" class="btn-gold btn-gold-outline" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://drive.google.com/uc?export=download&id=1R0moBzqZEmQqHkzfut5TwggANaDYCypQ" class="btn-gold btn-gold-filled">
+                <i class="fas fa-download"></i> Resume
+              </a>
+              <a href="https://www.linkedin.com/in/vivekhanagoji/" class="btn-gold btn-gold-outline" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Analyst  ',
-						'Software Data Engineer ',
-						];
+          <!-- Image — right column -->
+          <div class="col-lg-5 col-md-12 hero-img-col" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+            <div class="hero-image-wrap">
+              <div class="hero-image-ring"></div>
+              <img src="images/about-me.png" alt="Vivek Basavanth Hanagoji">
+            </div>
+          </div>
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+        </div>
+      </div>
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <!-- <h2>A Data Analyst</h2> -->
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://github.com/Hanagojiv" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
-						<a href="https://forms.gle/EDBQHoQdnjo9ajyS6" class="btn btn-white btn-outline-white py-3 px-4">Hire Me</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
+      <!-- Scroll cue -->
+      <div class="hero-scroll-cue">
+        <div class="scroll-mouse"></div>
+        <span>Scroll</span>
+      </div>
     </section>
 
 
-
+    <!-- ===================== ABOUT ===================== -->
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
 			<div class="row">
