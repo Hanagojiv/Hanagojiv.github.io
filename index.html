@@ -343,96 +343,117 @@
       </div>
     </section>
 
-   
 
+    <!-- ===================== PROJECTS ===================== -->
     <section class="ftco-section" id="project-section">
       <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate" data-aos="fade-up">
+            <span class="section-overline">Work</span>
+            <h2 class="mb-2">Selected Projects</h2>
+            <div class="title-line"></div>
+            <p class="mt-3">Data engineering and ML projects spanning SQL, Python, Power BI &amp; deep learning.</p>
           </div>
         </div>
+
         <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Hanagojiv/Generating-Fake-Face-Imgaes-using-GAN-Generative-AI" class="block-20 zoom-effect" style="background-image: url('https://assets-global.website-files.com/6386810eca9c3c22a6b31383/63e0929de4e25f3718195b57_generative_AI.png');">
+
+          <div class="col-md-4 d-flex ftco-animate mb-4" data-aos="fade-up">
+            <div class="blog-entry">
+              <a href="https://github.com/Hanagojiv/End-to-End-Reddit-Data-Processing-Pipeline-with-AWS-Services"
+                 class="block-20 zoom-effect"
+                 style="background-image: url('images/projects/reddit-pipeline.png');">
               </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/Hanagojiv/Generating-Fake-Face-Imgaes-using-GAN-Generative-AI">Generating fake face images using GAN</a></h3>
-                <p>This project begins with the generator creating easily identifiable fake images, which evolve through training cycles to become increasingly realistic.</p>
-				<p>Discriminators are then trained to detect differences between real and generated images, enhancing the generator's accuracy with each iteration.</p>
-				<p>Explored the profound capabilities of neural networks to understand and replicate the subtleties of human facial features.</p>
-
+              <div class="text">
+                <h3 class="heading">
+                  <a href="https://github.com/Hanagojiv/End-to-End-Reddit-Data-Processing-Pipeline-with-AWS-Services">End-to-End Reddit Data Pipeline on AWS</a>
+                </h3>
+                <p>Production-style ETL pulling Reddit data through Airflow &amp; Celery into S3, transformed with AWS Glue, queried via Athena, and loaded into Redshift for analytics.</p>
+                <a href="https://github.com/Hanagojiv/End-to-End-Reddit-Data-Processing-Pipeline-with-AWS-Services" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Hanagojiv/IPL_FirstInnings-Score-Predictions" class="block-20 zoom-effect" style="background-image: url('https://play-lh.googleusercontent.com/B8l_f_fZK0AxNaT9PumOhvQYH3rI8TNotT5n_z6uYb3P-hbwMEF_eiFUtXSITNhpFNs');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/Hanagojiv/IPL_FirstInnings-Score-Predictions">IPL First Innings Score Prediction Using Linear Regression</a></h3>
-                <p>Cleaned and preprocessed a historical IPL dataset, removing irrelevant columns and using OneHotEncoding for categorical features, resulting in a streamlined dataset of 5000+ records for consistent team performance analysis.</p>
-				<p>Developed and trained a Linear Regression model using 80% of the preprocessed data, achieving an R² score of 0.85 on the test set.</p>
-				<p>User-Friendly Web Application Deployment: Deployed the model as a web application using Flask, allowing users to input match details and receive real-time score predictions.</p>
+          <div class="col-md-4 d-flex ftco-animate mb-4" data-aos="fade-up" data-aos-delay="80">
+            <div class="blog-entry">
+              <a href="https://github.com/Hanagojiv/RealTimeStreaming_DE_Project"
+                 class="block-20 zoom-effect"
+                 style="background-image: url('images/projects/realtime-streaming.png');">
+              </a>
+              <div class="text">
+                <h3 class="heading">
+                  <a href="https://github.com/Hanagojiv/RealTimeStreaming_DE_Project">Real-Time Streaming Pipeline (Kafka + Spark)</a>
+                </h3>
+                <p>Event-driven streaming architecture with Apache Kafka and Spark feeding Amazon Redshift, with infrastructure provisioned via Terraform and containerized with Docker.</p>
+                <a href="https://github.com/Hanagojiv/RealTimeStreaming_DE_Project" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/Hanagojiv/Chest-X-ray-report-generation" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/Hanagojiv/Chest-X-ray-report-generation">Report generation for Chest X-ray images using Vision Transformers and GPT-2</a></h3>
-                <p>Data Collection and Preprocessing: Gathered and preprocessed chest X-ray datasets, ensuring data consistency and suitability for model input.</p>
-				<p>Model Selection and Training: Fine-tuned pre-trained ViT and GPT-2 models on specific datasets to achieve optimal performance tailored to our use case.</p>
-				<p>Text Generation: Implemented text generation functions using GPT-2 and BART models, and combined their outputs for enhanced medical report generation.</p>
-				<p>Ensemble Model Creation: Developed an ensemble model combining BART and GPT-2 to generate comprehensive medical reports.</p>
+          <div class="col-md-4 d-flex ftco-animate mb-4" data-aos="fade-up" data-aos-delay="160">
+            <div class="blog-entry">
+              <a href="https://github.com/Hanagojiv/DataEngineering-with-snowpark-python"
+                 class="block-20 zoom-effect"
+                 style="background-image: url('images/projects/snowpark-pipeline.png');">
+              </a>
+              <div class="text">
+                <h3 class="heading">
+                  <a href="https://github.com/Hanagojiv/DataEngineering-with-snowpark-python">Snowpark Python Data Pipeline</a>
+                </h3>
+                <p>Incremental data pipeline built on Snowpark Python stored procedures, orchestrated with Snowflake Tasks and deployed through an automated CI/CD workflow.</p>
+                <a href="https://github.com/Hanagojiv/DataEngineering-with-snowpark-python" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
+
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/Hanagojiv/NYC-Motor-Collision-Vehicles-Analysis" class="block-20 zoom-effect" style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/0*mC7mXxomdLjIOutV');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/Hanagojiv/NYC-Motor-Collision-Vehicles-Analysis">NYC motor collision vehicle data analysis</a></h3>
-				  <p>Efficiently transferred over 10 million data records from BigQuery to MySQL Server by implementing a streamlined data migration process
-					using Talend.</p>
-				  <p>Designed and implemented effective ETL workflows in Talend, including Staging and Integration processes, to streamline data merging
-					and cleansing from the NYC Motor Collision Dataset. pr</p>
-				  <p>Leveraged Tableau and PowerBI to analyze and identify key trends, patterns, and actionable insights, tracking year-over-year (YOY)
-					performance to facilitate important key performance indicators (KPIs).</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/BigDataIA-Fall2023-Team6/Assignment3" class="block-20 zoom-effect" style="background-image: url('https://miro.medium.com/v2/resize:fit:1024/1*JKug6lwi5bPyDBiSlv5ipg.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/BigDataIA-Fall2023-Team6/Assignment3">GenAI chatbot for SEC government documents</a></h3>
-				  <p>Crafted an OpenAI-driven chatbot for SEC government documents, enabling precise query resolution for over 75 forms with 95% accuracy
-					in similarity searches.</p>
-				  <p>Engineered 2 Airflow ETL pipelines for SEC document processing, boosting efficiency by 40% and enhancing data storage.</p>
-				  <p>Containerized application deployment using Docker on a GCP VM Instance ensures secure, scalable user access and robust
-					data protection with an AWS Postgres instance.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
+
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-md-4 d-flex ftco-animate mb-4" data-aos="fade-up">
+            <div class="blog-entry">
+              <a href="https://github.com/Hanagojiv/NYC-Motor-Collision-Vehicles-Analysis"
+                 class="block-20 zoom-effect"
+                 style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/0*mC7mXxomdLjIOutV');">
+              </a>
+              <div class="text">
+                <h3 class="heading">
+                  <a href="https://github.com/Hanagojiv/NYC-Motor-Collision-Vehicles-Analysis">NYC Motor Collision Analysis</a>
+                </h3>
+                <p>Migrated 10M+ records from BigQuery to MySQL via Talend ETL. Power BI &amp; Tableau dashboards surfacing YoY KPIs and collision trend analysis.</p>
+                <a href="https://github.com/Hanagojiv/NYC-Motor-Collision-Vehicles-Analysis" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate mb-4" data-aos="fade-up" data-aos-delay="80">
+            <div class="blog-entry">
+              <a href="https://github.com/BigDataIA-Fall2023-Team6/Assignment3"
+                 class="block-20 zoom-effect"
+                 style="background-image: url('https://miro.medium.com/v2/resize:fit:1024/1*JKug6lwi5bPyDBiSlv5ipg.png');">
+              </a>
+              <div class="text">
+                <h3 class="heading">
+                  <a href="https://github.com/BigDataIA-Fall2023-Team6/Assignment3">GenAI Chatbot for SEC Documents</a>
+                </h3>
+                <p>OpenAI-driven chatbot for 75+ SEC forms with 95% similarity search accuracy. 2 Airflow ETL pipelines, Dockerized deployment on GCP with AWS Postgres backend.</p>
+                <a href="https://github.com/BigDataIA-Fall2023-Team6/Assignment3" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
 
