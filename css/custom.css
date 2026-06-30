@@ -1987,3 +1987,9 @@ footer.ftco-footer{ background: var(--bg-0) !important; }
   background: inherit !important;
 }
 
+
+/* ── responsive tweaks ── */
+@media (max-width: 480px) {
+  .photo-grid { grid-template-columns: repeat(2, 1fr); }
+  .photo-wide { grid-column: span 1; }
+}
